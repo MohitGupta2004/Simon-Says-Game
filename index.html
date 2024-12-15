@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Simon Says Game</title>
+    <link rel="stylesheet" href="simon1.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- Welcome Page Container -->
+    <div class="welcome-wrapper">
+      <div class="welcome-container">
+        <h1>Welcome to Simon Says Game!</h1>
+
+        <h2>Game Rules:</h2>
+        <ul>
+          <li>Simon will flash a sequence of colors.</li>
+          <li>Repeat the sequence by clicking the correct buttons in the same order.</li>
+          <li>If you repeat the sequence correctly, it will get longer.</li>
+          <li>If you make a mistake, the game ends.</li>
+        </ul>
+
+        <button id="play-btn">Play</button>
+      </div>
+    </div>
+
+    <script>
+      document.getElementById("play-btn").onclick = function() {
+        window.location.href = "game.html"; // Redirect to the game page
+      };
+    </script>
+  </body>
+</html>
